@@ -7,7 +7,6 @@
 
 ## References
 
-[Intel 64 and IA-32 Architectures Software Developers Manual Volume 3](refs/intel_sdm3.pdf)
-
-S 18
-S 19
+* Intel 64 and IA-32 Architectures Software Developers Manual Volume 3 ([pdf/repo](refs/intel_sdm3.pdf)) ([intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-software-developer-system-programming-manual-325384.html))
+  * S 18, p. 641
+  * S 19, p. 763
