@@ -27,6 +27,7 @@
 
 * perf:
   * perf stat -e 
+  * http://www.bnikolic.co.uk/blog/hpc-prof-events.html
   
   
 
