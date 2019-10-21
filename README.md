@@ -27,7 +27,7 @@
   * may have more data than pcm
   * The equations here seem to be taken from the Intel uncore performance monitoring manuals.
     * [Broadwell events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/bdxde_uc.py): corresponding to [refs/broadwell_ep_ex_uncore_guide.pdf]
-    * [Jaketown Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/jkt_uc.py): corresponding to [refs/sandybridge_ep_uncore_guide.pdf]
+    * [Sandybridge Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/jkt_uc.py): corresponding to [refs/sandybridge_ep_uncore_guide.pdf]
     * [Skylake Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/skx_uc.py): corresponding to [refs/skylake_sp_uncore_guide.pdf]
 
   
