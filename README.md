@@ -21,15 +21,23 @@
     * PRd       - MMIO Read [Haswell Server only] (Partial Cache Line)
     * WiL       - MMIO Write (Full/Partial)
   * Some additional info on p. 30 of Intel Xeon Processor E5-2600 Product Family Uncore Performance Monitoring Guide   ([pdf/repo](refs/xeon_e5_2600_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
-  
-* [icl/papi](https://bitbucket.org/icl/papi/src/master/): a library for reading performance counters
+
 
 * [pmu-tools/ucevent](https://github.com/andikleen/pmu-tools/tree/master/ucevent): a python tool for some uncore events,wrapper around perf.
+  * may have more data than pcm
   * The equations here seem to be taken from the Intel uncore performance monitoring manuals.
+    * [Broadwell events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/bdxde_uc.py): corresponding to [refs/broadwell_uncore_guide.pdf]
+    * [Jaketown Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/jkt_uc.py): corresponding to [refs/jaketown_uncore_guide.pdf]
+    * [Skylake Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/skx_uc.py): corresponding to [refs/skylake_sp_uncore_guide.pdf]
+
+  
+* [icl/papi](https://bitbucket.org/icl/papi/src/master/): a library for reading performance counters
+  * seems out of date
 
 * perf:
   * perf stat -e 
   * http://www.bnikolic.co.uk/blog/hpc-prof-events.html
+  * tough to figure out what event codes to give
   
   
 
