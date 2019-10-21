@@ -40,3 +40,5 @@
 * Intel Xeon Processor E5-2600 Product Family Uncore Performance Monitoring Guide   ([pdf/repo](refs/xeon_e5_2600_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
 
 * [A 2015 blog post on pcm and PCIe performance counters](https://jdinkla.github.io/software-development/2015/04/24/measuring-traffic-on-the-pci-express-bus-pcie.html)
+
+* [Intel Blog Post](https://software.intel.com/en-us/blogs/2014/07/11/documentation-for-uncore-performance-monitoring-units) describing uncore performance references for different archs
