@@ -1,3 +1,5 @@
+# CPU Counters
+
 * [opcm/pcm](https://github.com/opcm/pcm): a library / set of tools for monitoring performance counters
   * including PCIe
   * looks like this is the solution Intel recommends right now
@@ -39,7 +41,11 @@
   * http://www.bnikolic.co.uk/blog/hpc-prof-events.html
   * tough to figure out what event codes to give
   
-  
+# GPU Counters
+
+`nvidia-ml` allows you to [query GPU PCIe counters](https://docs.nvidia.com/deploy/nvml-api/group__nvmlDeviceQueries.html#group__nvmlDeviceQueries_1gd86f1c74f81b5ddfaa6cb81b51030c72):
+* NVML_PCIE_UTIL_TX_BYTES
+* NVML_PCIE_UTIL_RX_BYTES
 
 ## References
 
