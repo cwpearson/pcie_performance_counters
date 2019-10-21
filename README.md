@@ -2,6 +2,24 @@
   * including PCIe
   * looks like this is the solution Intel recommends right now
   
+  * PCIe read events (PCI devices reading from memory - application writes to disk/network/PCIe device)
+    * PCIePRd: PCIe UC read transfer (partial cache line)
+    * PCIeRdCur: PCIe read current transfer (full cache line). On Haswell Server PCIeRdCur counts both full/partial cache lines
+    * RFO:      Demand Data RFO
+    * CRd:      Demand Code Read
+    * DRd:      Demand Data Read
+    * PCIeNSWr: PCIe Non-snoop write transfer (partial cache line)
+  * PCIe write events (PCI devices writing to memory - application reads from disk/network/PCIe device)
+    * PCIeWiLF  - PCIe Write transfer (non-allocating) (full cache line)
+    * PCIeItoM  - PCIe Write transfer (allocating) (full cache line)
+    * PCIeNSWr  - PCIe Non-snoop write transfer (partial cache line)
+    * PCIeNSWrF - PCIe Non-snoop write transfer (full cache line)
+    * ItoM      - PCIe write full cache line
+    * RFO       - PCIe partial Write
+  * CPU MMIO events (CPU reading/writing to PCIe devices):
+    * PRd       - MMIO Read [Haswell Server only] (Partial Cache Line)
+    * WiL       - MMIO Write (Full/Partial)
+  
 * [icl/papi](https://bitbucket.org/icl/papi/src/master/): a library for reading performance counters
 
 
