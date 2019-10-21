@@ -15,6 +15,7 @@
     * PCIeNSWr  - PCIe Non-snoop write transfer (partial cache line)
     * PCIeNSWrF - PCIe Non-snoop write transfer (full cache line)
     * ItoM      - PCIe write full cache line
+      * event 248 on SKX, corresponds to LLC_PCIE_DATA_BYTES on page 67/227 of the skylake uncore performance monitoring manual
     * RFO       - PCIe partial Write
   * CPU MMIO events (CPU reading/writing to PCIe devices):
     * PRd       - MMIO Read [Haswell Server only] (Partial Cache Line)
@@ -43,3 +44,5 @@
 * [A 2015 blog post on pcm and PCIe performance counters](https://jdinkla.github.io/software-development/2015/04/24/measuring-traffic-on-the-pci-express-bus-pcie.html)
 
 * [Intel Blog Post](https://software.intel.com/en-us/blogs/2014/07/11/documentation-for-uncore-performance-monitoring-units) describing uncore performance monitoring manuals for different archs
+
+* [Intel List of Uncore Performance Monitoring Guides](https://software.intel.com/en-us/articles/intel-sdm#uncore): have to decode the arch from the product family name
