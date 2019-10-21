@@ -20,14 +20,14 @@
   * CPU MMIO events (CPU reading/writing to PCIe devices):
     * PRd       - MMIO Read [Haswell Server only] (Partial Cache Line)
     * WiL       - MMIO Write (Full/Partial)
-  * Some additional info on p. 30 of Intel Xeon Processor E5-2600 Product Family Uncore Performance Monitoring Guide   ([pdf/repo](refs/xeon_e5_2600_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
+  * Some additional info on p. 30 of Intel Xeon Processor E5-2600 Product Family Uncore Performance Monitoring Guide   ([pdf/repo](refs/sandybridge_ep_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
 
 
 * [pmu-tools/ucevent](https://github.com/andikleen/pmu-tools/tree/master/ucevent): a python tool for some uncore events,wrapper around perf.
   * may have more data than pcm
   * The equations here seem to be taken from the Intel uncore performance monitoring manuals.
-    * [Broadwell events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/bdxde_uc.py): corresponding to [refs/broadwell_uncore_guide.pdf]
-    * [Jaketown Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/jkt_uc.py): corresponding to [refs/jaketown_uncore_guide.pdf]
+    * [Broadwell events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/bdxde_uc.py): corresponding to [refs/broadwell_ep_ex_uncore_guide.pdf]
+    * [Jaketown Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/jkt_uc.py): corresponding to [refs/sandybridge_ep_uncore_guide.pdf]
     * [Skylake Events](https://github.com/andikleen/pmu-tools/blob/master/ucevent/skx_uc.py): corresponding to [refs/skylake_sp_uncore_guide.pdf]
 
   
@@ -44,10 +44,12 @@
 ## References
 
 * Intel 64 and IA-32 Architectures Software Developers Manual Volume 3 ([pdf/repo](refs/intel_sdm3.pdf)) ([intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-software-developer-system-programming-manual-325384.html))
-  * S 18, p. 641
-  * S 19, p. 763
 
-* Intel Xeon Processor E5-2600 Product Family Uncore Performance Monitoring Guide   ([pdf/repo](refs/xeon_e5_2600_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
+* Intel uncore performance guides:
+  * Sandy Bridge EP ([pdf/repo](refs/sandybridge_ep_uncore_guide.pdf))  ([intel.com](http://www.intel.com/content/dam/www/public/us/en/documents/design-guides/xeon-e5-2600-uncore-guide.pdf))
+  * Broadwell EP/EX ([pdf/repo](refs/broadwell_ep_ex_uncore_guide.pdf))  ([intel.com](http://www.intel.com/content/www/us/en/processors/xeon/xeon-e5-e7-v4-uncore-performance-monitoring.html)) 
+  * Skylake SP ([pdf/repo](refs/skylake_sp_uncore_guide.pdf))  ([intel.com](https://www.intel.com/content/www/us/en/processors/xeon/scalable/xeon-scalable-uncore-performance-monitoring-manual.html))
+
 
 * [A 2015 blog post on pcm and PCIe performance counters](https://jdinkla.github.io/software-development/2015/04/24/measuring-traffic-on-the-pci-express-bus-pcie.html)
 
