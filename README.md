@@ -23,7 +23,12 @@
   
 * [icl/papi](https://bitbucket.org/icl/papi/src/master/): a library for reading performance counters
 
-* [pmu-tools/ucevent](https://github.com/andikleen/pmu-tools/tree/master/ucevent): a python tool for some uncore events, that uses the `/sys/...` filesystem
+* [pmu-tools/ucevent](https://github.com/andikleen/pmu-tools/tree/master/ucevent): a python tool for some uncore events,wrapper around perf.
+
+* perf:
+  * perf stat -e 
+  
+  
 
 ## References
 
