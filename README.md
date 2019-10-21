@@ -24,6 +24,7 @@
 * [icl/papi](https://bitbucket.org/icl/papi/src/master/): a library for reading performance counters
 
 * [pmu-tools/ucevent](https://github.com/andikleen/pmu-tools/tree/master/ucevent): a python tool for some uncore events,wrapper around perf.
+  * The equations here seem to be taken from the Intel uncore performance monitoring manuals.
 
 * perf:
   * perf stat -e 
@@ -41,4 +42,4 @@
 
 * [A 2015 blog post on pcm and PCIe performance counters](https://jdinkla.github.io/software-development/2015/04/24/measuring-traffic-on-the-pci-express-bus-pcie.html)
 
-* [Intel Blog Post](https://software.intel.com/en-us/blogs/2014/07/11/documentation-for-uncore-performance-monitoring-units) describing uncore performance references for different archs
+* [Intel Blog Post](https://software.intel.com/en-us/blogs/2014/07/11/documentation-for-uncore-performance-monitoring-units) describing uncore performance monitoring manuals for different archs
